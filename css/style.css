@@ -1,0 +1,127 @@
+/*font-family: 'IBM Plex Mono', monospace;
+font-family: 'Monofett', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Roboto', sans-serif;*/
+*{
+    box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	padding:0;
+	margin:0;
+}
+b {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+	font-size: 56px;
+    color: #000;
+    text-align: center;
+}
+
+h2 {
+	font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+h3 {
+	font-size: 32px;
+    color: #000;
+}
+
+h4 {
+	font-size: 24px;
+    color: #000;
+}
+
+h5 {
+	font-size: 20px;
+    color: #000;
+}
+
+h6 {
+	font-size: 18px;
+    color: #000;
+}
+
+#header{
+    background: linear-gradient(#52527a, #34344c);
+}
+
+#logo{
+    width: auto;
+    max-width: 400px;
+}
+
+.navbar-brand{
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.nav{
+    background-color: #000;
+    height: 80px;
+    
+}
+
+.navbar{
+    background-color: #000;
+    margin-bottom:auto;
+    
+}
+
+.glyphicon{
+    color: #fff;
+}
+
+.carousel-caption p{
+    font-family: 'Permanent Marker', cursive;
+    color: #fff !important;
+    font-size: 60px;
+    text-align: center;
+    top: 30%;
+    bottom: auto;
+    max-width: 500px;
+    height: 100%;
+}
+
+#intro{
+   background-image: url("colorfulcode.jpg");
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .column{
+        float: none;
+    }
+    .c3{
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+

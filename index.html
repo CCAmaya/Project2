@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Stack Development at CUNY City Tech</title>
+
+    <!--Required metatag and stylesheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Monofett|Permanent+Marker|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #header h1 {
+            color: #fff;
+        }
+
+        #header h2 {
+            color: #fff;
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .parallax {
+            background-image: url("img/colorfulcode.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #course {
+            text-align: center;
+        }
+
+        #pic1 {
+            float: left;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        #pic2 {
+            float: left;
+            margin: 0 auto;
+            padding: 20px;
+            width: 100%;
+        }
+
+        #intensivePics:after {
+            content: '';
+            clear: both;
+            margin: 0 auto;
+        }
+
+        .col-sm-4 proof {
+            background-color: azure;
+        }
+
+        #skills {
+            padding: 35px;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 0px #fff;
+        }
+
+        #reviews {
+            padding-top: 35px;
+            background-image: url(img/orange.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #reviews h3 {
+            text-align: center;
+            margin: 0;
+            padding: 0px;
+        }
+
+        #container {
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        #display {
+            max-width: 100%;
+        }
+
+        #thumbs li {
+            list-style: none;
+            padding: 0px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #deets li {
+            visibility: visible;
+            list-style: circle;
+            margin-left: 30px;
+        }
+
+        #thumbs img {
+            max-width: 70px;
+            border: 1px solid #008b8b;
+        }
+
+        #c2a {
+            color: #fff;
+            text-align: left;
+            padding: 40px;
+            border: 5px solid #000;
+            width: 100%;
+        }
+
+        #c2a:after {
+            content: '';
+            display: none;
+            clear: both;
+        }
+
+        #c2abtn {
+            float: right;
+            margin-right: 40px;
+        }
+
+        #instructors {
+            padding: 35px;
+        
+        }
+
+        #instructors h3 {
+            text-align: center;
+        }
+
+        #eloy {
+            float: left;
+            width: 50%;
+            text-shadow: 1px 0px #000;
+            display: inline-block;
+        }
+
+        #rosi {
+            float: right;
+            width: 50%;
+            text-shadow: 1px 0px #000;
+            display: block;
+        }
+
+        .parallax1 {
+            background-image: url("img/whiteboard.jpg");
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #eloypic {
+            width: 350px;
+            border-radius: 160px;
+        }
+
+        #eloytext {
+            float: right;
+        }
+        
+        #rosi{
+            display: block;
+        }
+
+        #babypic {
+            width: 350px;
+            height: 320px;
+            border-radius: 160px;
+            float: right;
+        }
+
+        #borderbox {
+            background: #f2f2f2;
+            margin: 30px;
+            opacity: .90;
+        }
+
+        #details {
+            display: inline-block;
+            background-image: url(img/circuit.jpg);
+            background-size: cover;
+            width: 100%;
+            padding-left: 20px;
+        }
+
+        #details img {
+            opacity: 0.5;
+        }
+
+        #details h3 {
+            text-align: center
+        }
+
+        ul.a {
+            list-style-type: circle;
+        }
+
+        li before {
+            list-style-type: circle;
+        }
+
+        #descp {
+            width: 50%;
+            text-align: justify;
+        }
+
+        #icon {
+            float: right;
+            width: 50%;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        .parallax2 {
+            background-image: url("img/nyc1.jpg");
+
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            padding-top: 0;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        #contact {
+            padding: 100px;
+            text-align: center;
+            display: inline-block;
+            text-shadow: 1px 0px #000;
+        }
+
+        #map,
+        #form {
+            float: left;
+        }
+
+        #map {
+            height: 50vh;
+            width: 64%;
+            clear: both;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        #form {
+            width: 33%;
+            padding-left: 30px;
+        }
+
+        label {
+            text-align: left;
+            font-size: 16px;
+            padding-bottom: 10px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #000;
+            width: 100%;
+        }
+
+        #submit {
+            width: 50%;
+            background-color: #afeeee;
+        }
+        .carousel-caption{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding-bottom: 50%;
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+            #instructors{
+                overflow: auto;
+            }
+            #eloy{
+                float: none;
+                width: 100%;
+                
+            }
+            #eloypic{
+               width: 200px;
+               border-radius: 160px;
+            }
+            #rosi{
+                float: none;
+                width: 100%;
+            }
+            #babypic{
+                float: none;
+               width: 200px;
+                height: 200px;
+               border-radius: 160px;  
+            }
+            #logo{
+                width: 100%;
+            }
+            #contact{
+                width: 100%;
+                overflow:auto;
+                padding: 0;
+            }
+            #map{
+                float: none;
+                width: 100%;
+            }
+            #form{
+                width: 100%;
+                float: none;
+            }
+            #parallax2{
+                padding: 0;
+            }
+            .footer{
+                width: 100%;
+            }
+            .carousel-caption{
+                padding-bottom:0;
+            }
+            .col-sm-4{
+                padding-left:35%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default affix-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+				<span class="glyphicon glyphicon-menu-hamburger"></span>
+			</button>
+            <a class="navbar-brand" href="#"><img src="img/logo_city_tech.jpg" id="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse" class="toggle">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#course">Course</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="fluid-container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!--slide 1-->
+                    <div class="item active">
+                        <img src="img/cryguy.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                               <p>Have a dead end job?</p>
+                        </div>
+                    </div>
+                    <!--slide 2-->
+                    <div class="item">
+                        <img src="img/bed.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                            <div class="full-width text-center">
+                                <p>Have no job at all?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--slide 3-->
+                    <div class="item">
+                        <img src="img/moneycomp.jpg" class="img-responsive" alt="Responsive image">
+                        <div class="carousel-caption">
+                            <div class="full-width text-center">
+                                <p>Get a job in coding!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+            </div>
+        </div>
+    <div id="intro">
+        <h2>Become a Full-Stack Developer in 16 Weeks!</h2>
+        <button type="button" class="btn btn-primary btn-lg center-block">Sign Up!</button>
+    </div>
+    <section id="course">
+        <div>
+            <h3> Web Development 16-Week Intensive at CityTech</h3>
+            <p> text text text</p>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <img src="img/coding.jpg" alt="Responsive image" style="width:200px;">
+            <img src="img/codesticky.jpg" alt="Responsive image" style="width:200px;">
+        </div>
+        <!--
+        <div id="intensivePics" class="container" style="margin-bottom:30px;">
+            <div class="row">
+                <div class="col-md-4 pic">
+                    <img src="img/coding.jpg" class="img-responsive" alt="Responsive image" id="pic1">
+                </div>
+                <div class="col-md-4 pic">
+                    <img src="img/codesticky.jpg" class="img-responsive" alt="Responsive image" id="pic2">
+                </div>
+            </div>
+        </div>
+-->
+        <br>
+    </section>
+    <section id="skills" class="parallax">
+        <h3 style="color:#fff; text-shadow: 1px 0px #000;">Skills You'll Acquire</h3>
+        <div class="container" style="margin-bottom:30px;">
+            <div class="row">
+                <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
+                    <h1 style="color:#000;">Proof 1</h1>
+                    <p style="color:#000;">this is my proof.</p>
+                </div>
+                <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
+                    <h1 style="color:#000;">Proof 1</h1>
+                    <p style="color:#000;">this is my proof.</p>
+                </div>
+                <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
+                    <h1 style="color:#000;opacity: 1;">Proof 1</h1>
+                    <p style="color:#000;opacity: 1">this is my proof.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <h3>What Our Students Are Saying</h3>
+        <div id="container">
+            <img id="display" src="img/full/quote1.png">
+            <ul id="thumbs">
+                <li><img src="img/thumb/quote1.png"></li>
+                <li><img src="img/thumb/quote2.png"></li>
+                <li><img src="img/thumb/quote3.png"></li>
+            </ul>
+        </div>
+    </section>
+    <br>
+    <div id="c2a">
+        <h4>Are you ready for an exciting career in web development? <button type="button" class="btn btn-success" id="c2abtn">Yes Please!</button></h4>
+    </div>
+    <section id="instructors" class="parallax1">
+        <h3 class="media-heading">Meet Our Instructors</h3>
+        <br>
+        <div id="eloy">
+            <img src="img/eloy.jpeg" id="eloypic">
+            <div>
+                <h4> Eloy Ortega</h4>
+                <p> A commercial artist with a focus in web development, graphic design, photography and illustration. As an instructor teaching continuing education courses for web development, I share life-learned lessons to prepare my students for the industry. My joy comes from seeing my students work through complex problems and leveraging their newfound knowledge to solve them.</p>
+            </div>
+        </div>
+        <br>
+        <div id="rosi">
+            <div>
+                <h4>Rosalie Mia</h4>
+                <p> Graduated from City Tech's 16-week Web Development Intensive. So I'm pretty much an expert!</p>
+            </div>
+            <div>
+                <img src="img/baby.JPG" id="babypic">
+            </div>
+        </div>
+    </section>
+    <section id="details" class="container">
+        <div class="row" id="borderbox">
+            <div class="col-sm-8">
+                <h3>Course Details</h3>
+                <h5><b>FULL-STACK WEB DEVELOPMENT 16 WEEK INTENSIVE
+            CRS 200- SP18</b></h5>
+                <p><b>Tues, Wed, Thurs, 6:00 - 9:00 pm, 5/22 - 9/6.
+<br>
+            96 hours, $2500</b>
+                    <br> Seating is limited for this in-demand class. Register early to insure a space. A two part payment plan is available for this course.
+                    <br> Contact 718 552-1173 to register with payment plan.
+                    <br> Course Information: dsalomon@citytech.cuny.edu
+                    <br>
+                    <b>Note:</b>
+                    <br> This is an introductory but intensive class. Please be sure you have good basic computer skills to insure the best learning experience:</p>
+                <ul id="deets">
+                    <li>Basic file management</li><br>
+                    <li>Navigating a computer</li><br>
+                    <li>Html experience is a plus</li>
+                </ul>
+            </div>
+            <div class="col-sm-4" style="padding-top: 100px;">
+                <i class="fa fa-calendar" style="font-size:72px;color:red;opacity: 1; padding-left: 20px;"></i>
+                <br>
+                <br>
+                <button type="button" class="btn btn-danger" id="c2abtn" style="background-color:red;opacity: 1; float: none;">Sign Up Now!</button>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="details">
+        <h3>Course Details</h3>
+        <div id="descp">
+            <h5><b>FULL-STACK WEB DEVELOPMENT 16 WEEK INTENSIVE
+            CRS 200- SP18</b></h5>
+            <p><b>Tues, Wed, Thurs, 6:00 - 9:00 pm, 5/22 - 9/6.
+<br>
+            96 hours, $2500</b>
+                <br> Seating is limited for this in-demand class. Register early to insure a space. A two part payment plan is available for this course.
+                <br> Contact 718 552-1173 to register with payment plan.
+                <br> Course Information: dsalomon@citytech.cuny.edu
+                <br>
+                <b>Note:</b>
+                <br> This is an introductory but intensive class. Please be sure you have good basic computer skills to insure the best learning experience:</p>
+            <ul>
+                <li>Basic file management</li><br>
+                <li>Navigating a computer</li><br>
+                <li>Html experience is a plus</li>
+            </ul>
+        </div>
+        <div id="icon">
+            <i class="fa fa-calendar" style="font-size:72px;color:red"></i>
+            <br>
+            <button type="button" class="btn btn-danger" id="c2abtn">Sign Up Now!</button>
+        </div>
+    </section>
+-->
+    <section id="contact" class="parallax2">
+        <h3>Have Questions?</h3>
+        <p><b>We're here to answer any questions you may have about the course or signing up. Also contact us for payment plans or scheduling conflicts. It's never too late to start a new career, and we're with you every step of the way! Contact us today.</b></p>
+        <div class="map-responsive" id="map" class="c3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12100.084226303135!2d-73.9874589!3d40.6955339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x284552dca0b97d69!2sNew+York+City+College+of+Technology!5e0!3m2!1sen!2sus!4v1521733007801" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div id="form" class="c3">
+            <form>
+                <h4>Contact Us:</h4>
+                <label>First Name:
+                <input type="text" name="firstName" required>
+            </label>
+                <label>Last Name:
+                <input type="text" name="lastName" required>
+            </label>
+                <br>
+                <label>Email:
+                <input type="email" name="email" required>
+            </label>
+                <br>
+                <label>Questions:
+                <textarea name="message"></textarea>
+                </label>
+                <br>
+                <input class="btn btn-default" type="submit" value="I Need Answers!" id="submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="footer">
+                <a href="#course">Course</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#instructors">Instructors</a>
+                <a href="#details">Details</a>
+                <a href="#contact">Contact Us</a>
+            </ul>
+        </nav>
+    </footer>
+    <!--Required scripts-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Custom script here-->
+    <script>
+        thumbs = document.querySelectorAll('#thumbs img');
+        for (i in thumbs) {
+            console.log(i);
+            thumbs[i].onclick = function() {
+                s = this.src;
+                s = s.replace('thumb', 'full');
+                document.getElementById('display').src = s;
+                thumbs[0].style.border = '1px #008b8b solid'
+                thumbs[1].style.border = '1px #008b8b solid'
+                thumbs[2].style.border = '1px #008b8b solid'
+                t = this.style.border;
+                t = t.replace('255', '0');
+                this.style.border = t
+            };
+        };
+    </script>
+</body>
+</html>
