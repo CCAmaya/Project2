@@ -36,23 +36,30 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #intro{
+            border: solid 3px #000;
+            padding: 20px;
+        }
 
         #course {
             text-align: center;
+            padding: 0px;
+            border: solid 4px;
+            margin: 0px;
+            color: #FC415A;
+            background-color: #4B4A50;
         }
 
-        #pic1 {
-            float: left;
-            margin: 0 auto;
-            padding: 20px;
-            width: 100%;
+        #img1 {
+            width:350px; 
+            margin-right: 40px;
+            border: solid 3px #fff;
         }
 
-        #pic2 {
-            float: left;
-            margin: 0 auto;
-            padding: 20px;
-            width: 100%;
+        #img2{
+            width:350px; 
+            margin-right: 40px;
+            border: solid 3px #fff;
         }
 
         #intensivePics:after {
@@ -320,6 +327,43 @@
             align-content: center;
             padding-bottom: 50%;
         }
+        .footer{
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            margin-top:
+        }
+        .typewriter{
+            background-color: #c3c3c3;
+            color: #fff;
+            text-align: center;
+            border: solid 3px #000;
+            padding: 10px;
+        }
+        .typewriter h4 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space:nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (max-width: 600px) {
@@ -378,10 +422,28 @@
                 padding-bottom:0;
             }
             .col-sm-4-fafa{
-                padding-left:35%;
+                padding-left:35%
+            }
+            #img1{
+                margin: 0px;
+                padding: 0px;
+                }
+            #img2{
+                margin: 0px;
+                padding-left: 0px;
+            }
+            #course{
+                margin: 0px;
+                padding: 0px;
             }
             
-        }
+            .typewriter{
+                white-space:normal;
+                word-wrap: break-word;
+            }
+            .typewriter h4{
+                font-size: 18px;
+            }
     </style>
 </head>
 
@@ -451,18 +513,18 @@
             </div>
         </div>
     <div id="intro">
-        <h1>Become a Full-Stack Developer in 16 Weeks!</h1>
+        <h1>Become A Full-Stack Developer <br>In 16 Weeks!</h1><br>
         <button type="button" class="btn btn-primary btn-lg center-block">Sign Up!</button>
     </div>
     <section id="course">
         <div>
-            <h2> Web Development 16-Week Intensive at CityTech</h2>
-            <p> text text text</p>
+            <h2 style="color: #FC415A; text-shadow: 1px 0px #000;" > Web Development 16-Week Intensive at CityTech</h2><br>
+            <p style="color: #FC415A; text-shadow: 1px 0px #000; word-wrap: break-word; text-align: center; font-size: 18px;">Job openings in web development are growing at a rate of 15% faster than average occupations. Why not join a career in a field of the future?<br> Companies like Google, Amazon, and Facebook hire only well-trained web developers to join their ranks.<br> With this course at CityTech, you'll gain the in-demand skills to kickstart an innovative career as a full-stack web developer.</p>
         </div>
         <br>
-        <div style="text-align: center;">
-            <img src="img/coding.jpg" alt="Responsive image" style="width:200px;">
-            <img src="img/codesticky.jpg" alt="Responsive image" style="width:200px;">
+        <div style="text-align: center; margin: 20px" id="coursepics">
+            <img src="img/coding.jpg" alt="Responsive image" id="img1">
+            <img src="img/codesticky.jpg" alt="Responsive image" id="img2">
         </div>
         <!--
         <div id="intensivePics" class="container" style="margin-bottom:30px;">
@@ -532,7 +594,7 @@
     </section>
     <br>
     <div id="c2a">
-        <h4>Are you ready for an exciting career in web development? <button type="button" class="btn btn-success" id="c2abtn">Yes Please!</button></h4>
+        <h4>Are You Ready For An Exciting Career In Web Development? <button type="button" class="btn btn-success" id="c2abtn">Yes Please!</button></h4>
     </div>
     <section id="instructors" class="parallax1">
         <h2 class="media-heading">Meet Our Instructors</h2>
@@ -584,6 +646,10 @@
             </div>
         </div>
     </section>
+    <div class="typewriter">
+        <h4>What are you waiting for?</h4><br>
+        <button type="button" class="btn btn-primary btn-lg center-block" style="background-color: #FC415A; color: #000; text-shadow: 1px 0 #c3c3c3">Sign Up!</button>
+    </div>
     <!--
     <section id="details">
         <h3>Course Details</h3>
@@ -643,10 +709,10 @@
     <footer>
         <nav>
             <ul class="footer">
-                <a href="#course">Course</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#instructors">Instructors</a>
-                <a href="#details">Details</a>
+                <a href="#course">Course  </a>|
+                <a href="#reviews">Reviews  </a>|
+                <a href="#instructors">Instructors  </a>|
+                <a href="#details">Details  </a>|
                 <a href="#contact">Contact Us</a>
             </ul>
         </nav>
