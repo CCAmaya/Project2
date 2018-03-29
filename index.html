@@ -66,10 +66,19 @@
         }
 
         #skills {
-            padding: 35px;
+            padding: 55px;
             text-align: center;
             color: #fff;
             text-shadow: 1px 0px #fff;
+
+        }
+        
+        .bullets{
+            visibility: visible;
+            list-style: circle;
+            padding-left: 90px;
+            text-align: left;
+            font-weight: 700;
         }
 
         #reviews {
@@ -314,6 +323,13 @@
 
         /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (max-width: 600px) {
+            #skills{
+                height: auto;
+            }
+            #reviews{
+                padding-top: 20px;
+                background-size: 325px;
+            }
             #instructors{
                 overflow: auto;
             }
@@ -342,7 +358,7 @@
             #contact{
                 width: 100%;
                 overflow:auto;
-                padding: 0;
+                padding: 20px;
             }
             #map{
                 float: none;
@@ -361,7 +377,7 @@
             .carousel-caption{
                 padding-bottom:0;
             }
-            .col-sm-4{
+            .col-sm-4-fafa{
                 padding-left:35%;
             }
             
@@ -435,12 +451,12 @@
             </div>
         </div>
     <div id="intro">
-        <h2>Become a Full-Stack Developer in 16 Weeks!</h2>
+        <h1>Become a Full-Stack Developer in 16 Weeks!</h1>
         <button type="button" class="btn btn-primary btn-lg center-block">Sign Up!</button>
     </div>
     <section id="course">
         <div>
-            <h3> Web Development 16-Week Intensive at CityTech</h3>
+            <h2> Web Development 16-Week Intensive at CityTech</h2>
             <p> text text text</p>
         </div>
         <br>
@@ -463,23 +479,45 @@
         <br>
     </section>
     <section id="skills" class="parallax">
-        <h3 style="color:#fff; text-shadow: 1px 0px #000;">Skills You'll Acquire</h3>
+        <h2 style="color:#fff; text-shadow: 1px 0px #000;">Skills You'll Acquire</h2>
+        <br>
+        <br>
         <div class="container" style="margin-bottom:30px;">
             <div class="row">
                 <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
-                    <h1 style="color:#000;">Proof 1</h1>
-                    <p style="color:#000;">this is my proof.</p>
+                    <h3 style="color:#000;">Product Development</h3>
+                    <ul style="color:#000;" class="bullets">
+                        <li>Mockups</li>
+                        <li>Wireframing</li>
+                        <li>Boilerplating</li>
+                        <li>Repositories</li>
+                    </ul>
+                    <br>
                 </div>
                 <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
-                    <h1 style="color:#000;">Proof 1</h1>
-                    <p style="color:#000;">this is my proof.</p>
+                    <h3 style="color:#000;">Front-End Web Development</h3>
+                    <ul style="color:#000;" class="bullets">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+                    </ul>
+                    <br>
                 </div>
                 <div class="col-sm-4 proof" style="background-color:#f2f2f2;opacity: .75;background-clip:content-box;">
-                    <h1 style="color:#000;opacity: 1;">Proof 1</h1>
-                    <p style="color:#000;opacity: 1">this is my proof.</p>
+                    <h3 style="color:#000;opacity: 1;">Back-End Web Development</h3>
+                    <ul style="color:#000;opacity: 1" class="bullets">
+                        <li>PHP</li>
+                        <li>SQL</li>
+                        <li>Web App Development</li>
+                        <li>Testing & Debugging</li>
+                    </ul>
+                    <br>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
     </section>
     <section id="reviews">
         <h3>What Our Students Are Saying</h3>
@@ -497,7 +535,7 @@
         <h4>Are you ready for an exciting career in web development? <button type="button" class="btn btn-success" id="c2abtn">Yes Please!</button></h4>
     </div>
     <section id="instructors" class="parallax1">
-        <h3 class="media-heading">Meet Our Instructors</h3>
+        <h2 class="media-heading">Meet Our Instructors</h2>
         <br>
         <div id="eloy">
             <img src="img/eloy.jpeg" id="eloypic">
@@ -520,9 +558,9 @@
     <section id="details" class="container">
         <div class="row" id="borderbox">
             <div class="col-sm-8">
-                <h3>Course Details</h3>
-                <h5><b>FULL-STACK WEB DEVELOPMENT 16 WEEK INTENSIVE
-            CRS 200- SP18</b></h5>
+                <h2>Course Details</h2>
+                <h4><b>FULL-STACK WEB DEVELOPMENT 16 WEEK INTENSIVE
+            CRS 200- SP18</b></h4>
                 <p><b>Tues, Wed, Thurs, 6:00 - 9:00 pm, 5/22 - 9/6.
 <br>
             96 hours, $2500</b>
@@ -538,7 +576,7 @@
                     <li>Html experience is a plus</li>
                 </ul>
             </div>
-            <div class="col-sm-4" style="padding-top: 100px;">
+            <div class="col-sm-4-fafa" style="padding-top: 100px;">
                 <i class="fa fa-calendar" style="font-size:72px;color:red;opacity: 1; padding-left: 20px;"></i>
                 <br>
                 <br>
@@ -575,7 +613,7 @@
     </section>
 -->
     <section id="contact" class="parallax2">
-        <h3>Have Questions?</h3>
+        <h2>Have Questions?</h2>
         <p><b>We're here to answer any questions you may have about the course or signing up. Also contact us for payment plans or scheduling conflicts. It's never too late to start a new career, and we're with you every step of the way! Contact us today.</b></p>
         <div class="map-responsive" id="map" class="c3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12100.084226303135!2d-73.9874589!3d40.6955339!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x284552dca0b97d69!2sNew+York+City+College+of+Technology!5e0!3m2!1sen!2sus!4v1521733007801" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
